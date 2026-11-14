@@ -1,4 +1,4 @@
-# PR Guardian — Evaluation Checklist
+# PR Guardian: Evaluation Checklist
 
 This checklist is used to verify the functionality, reliability, and safety of the PR Guardian AI code reviewer.
 
