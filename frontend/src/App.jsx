@@ -18,6 +18,7 @@ import {
   PanelBody,
   Badge,
 } from "./styles/components";
+import ReviewLoader from "./components/ReviewLoader";
 
 const Intro = styled.div`
   margin: 30px 0;
@@ -170,19 +171,7 @@ function App() {
           </Section>
         )}
 
-        {loading && (
-          <Section>
-            <Panel>
-              <PanelBody>
-                <Heading>Analyzing your changes...</Heading>
-                <Description>
-                  The AI agent is inspecting your diff and executing its review
-                  tools. This may take a little while.
-                </Description>
-              </PanelBody>
-            </Panel>
-          </Section>
-        )}
+        {loading && <ReviewLoader />}
 
         {result && !loading && (
           <>
